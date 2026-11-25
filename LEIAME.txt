@@ -1,0 +1,5 @@
+CorpoHumano - Biologia Humana
+Autores: Thulio e Duda
+
+Como abrir: de dois cliques em index.html.
+Como publicar: envie esta pasta para um repositorio no GitHub e ative o GitHub Pages (Settings > Pages > branch main), ou importe o repositorio na Vercel e clique em Deploy.

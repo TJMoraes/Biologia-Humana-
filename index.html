@@ -1,0 +1,35 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>CorpoHumano – Biologia Humana para Medicina</title>
+<link rel="stylesheet" href="css/estilo.css"></head><body>
+<header><span class="logo">❤ CorpoHumano</span><nav id="nav"></nav></header>
+<main>
+<section id="inicio"><div class="hero"><h1>Domine o corpo humano.<br>Rumo à Medicina.</h1><p>Anatomia interativa, videoaulas, quiz com explicações, doenças, nutrição personalizada e treinos – tudo em um só lugar.</p>
+<svg class="ecg" viewBox="0 0 400 60"><path d="M0 30H120L135 8 150 52 165 30H260L275 5 290 55 305 30H400"/></svg>
+<div class="stats"><div><b id="n1">0</b>estruturas</div><div><b>20</b>questões</div><div><b>8</b>videoaulas</div><div><b>4</b>órgãos vitais</div></div>
+<p><a class="btn" href="#corpo" style="text-decoration:none;display:inline-block">Explorar o corpo ➜</a></p></div>
+<div class="grid" id="quick"></div></section>
+
+<section id="corpo" hidden><h2>🧍 Corpo humano interativo</h2><p>Escolha as camadas e clique em qualquer órgão, osso, músculo ou nervo para ver o nome e a função.</p>
+<div id="tabs" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px"></div>
+<div class="body"><svg class="b s s-o" id="svg" viewBox="0 0 200 410"></svg>
+<div class="card" id="info"><h3>Clique em uma estrutura</h3><p>Dica: passe o mouse para destacar.</p></div></div></section>
+
+<section id="videos" hidden><h2>🎬 Videoaulas</h2><p>Cada cartão abre uma busca no YouTube com aulas sobre o tema (assim os links nunca quebram).</p><div class="grid" id="vg"></div></section>
+
+<section id="quiz" hidden><h2>📝 Quiz estilo prova de Medicina</h2><p style="color:var(--mut)">Questões originais no estilo das provas de residência e vestibular de Medicina. Em cada resposta você vê por que acertou ou errou.</p><div id="qz" class="card"></div></section>
+
+<section id="doencas" hidden><h2>🩺 Doenças dos órgãos vitais</h2><div id="dz"></div></section>
+
+<section id="fraturas" hidden><h2>🦴 Fraturas</h2><div class="grid">
+<div class="card"><h3>Tipos</h3><p><b>Fechada:</b> pele íntegra.<br><b>Exposta:</b> osso rompe a pele; risco alto de infecção.<br><b>Galho verde:</b> comum em crianças, quebra parcial.<br><b>Cominutiva:</b> vários fragmentos.<br><b>De estresse:</b> microfissura por esforço repetido.</p></div>
+<div class="card"><h3>Primeiros socorros</h3><p>1. Chame o SAMU (192).<br>2. Não tente realinhar o osso.<br>3. Imobilize na posição encontrada, acima e abaixo da lesão.<br>4. Cubra feridas com pano limpo; controle sangramento.<br>5. Gelo envolto em pano, 15 min.<br>6. Em suspeita de coluna ou pescoço, não mova a pessoa.</p></div>
+<div class="card"><h3>Cicatrização</h3><p><b>Hematoma</b> (dias 1–5) → <b>calo mole</b> de cartilagem (semanas 1–3) → <b>calo duro</b> ósseo (3–12 semanas) → <b>remodelação</b> (meses a anos).</p></div>
+<div class="card"><h3>Como ajudar o osso</h3><p>Cálcio (leite, couve, sardinha), vitamina D (sol e peixes), proteína, vitamina C; não fumar; seguir fisioterapia e retornos ao ortopedista.</p></div></div></section>
+
+<section id="nutricao" hidden><h2>🥗 Guia de alimentação personalizado</h2><div class="body"><div class="card"><div id="nf"></div><button onclick="calc()" style="margin-top:12px">Calcular meu plano</button></div><div class="card res" id="nr">Preencha os dados e clique em calcular.</div></div></section>
+
+<section id="treino" hidden><h2>🏋 Guias de exercícios</h2><div id="tt" style="display:flex;gap:6px;flex-wrap:wrap"></div><div class="card" id="tb" style="margin-top:12px"></div></section>
+
+<section id="conta" hidden><h2>👤 Minha conta</h2><div class="grid"><div class="card"><label>Seu nome</label><input id="cn"><label>Meta de estudo</label><select id="cm"><option>Medicina – UFxx / vestibular</option><option>Residência médica</option><option>Enfermagem / saúde</option><option>Curiosidade</option></select><button onclick="saveC()" style="margin-top:10px">Salvar perfil</button></div><div class="card" id="cs"></div></div></section>
+</main>
+<footer>Desenvolvido por <b>Thulio</b> e <b>Duda</b> · Conteúdo educativo, não substitui avaliação médica ou nutricional.</footer>
+<script src="js/script.js"></script></body></html>
